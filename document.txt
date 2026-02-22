@@ -1,0 +1,27 @@
+#create virtual env
+python.exe -m pip install --upgrade pip
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+pip -m venv jbookspace      #creating virtual env
+jbookspace\Script\Activate
+Remove-item -Recurse -Force jbookspace
+
+
+
+# creating repo
+git init
+create repo in github
+
+#commit in local "MACHINE"
+git add .
+git commit -m " "
+
+#creating remote 
+git remote add origin "remote link"
+
+#create branch
+git branch
+git checkout -b main
+
+#git push
+git push origin -u master
+
