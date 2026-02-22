@@ -1,11 +1,15 @@
 #create virtual env
-python.exe -m pip install --upgrade pip
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 pip -m venv jbookspace      #creating virtual env
 jbookspace\Script\Activate
 Remove-item -Recurse -Force jbookspace
+python.exe -m pip install --upgrade pip
 
+# to check everything thats installed by user in env 
+python -m pip list --user
 
+# to delete those install things
+pyhton -m pip freeze --user | %{pip uninstall -y $_}
 
 # creating repo
 git init
