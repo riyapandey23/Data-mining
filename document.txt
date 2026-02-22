@@ -29,3 +29,5 @@ git checkout -b main
 #git push
 git push origin -u master
 
+#force push
+git push --force origin main
